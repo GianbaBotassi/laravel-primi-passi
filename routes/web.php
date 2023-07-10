@@ -20,7 +20,7 @@ Route::get('/', function () {
         'surname' => 'Pinni'
     ];
     return view('home', $data);
-});
+})->name('homepage');
 
 Route::get('/contatti', function () {
 
@@ -31,18 +31,20 @@ Route::get('/contatti', function () {
     ];
 
     return view('contatti', $info);
-});
+})->name('contatti');
+
 Route::get('/dove-siamo', function () {
 
     $infoPos = [
         'position' => 'Seconda stella a destra, poi dritto fino al mattino.'
     ];
     return view('dove-siamo', $infoPos);
-});
+})->name('dove-siamo');
+
 Route::get('/about', function () {
 
     $dataAbout = [
         'description' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nemo quibusdam odit inventore dolor quisquam distinctio perferendis sequi! Distinctio voluptas quod libero rerum aliquid. Fugit, maxime nemo. Eligendi, aspernatur dolore.'
     ];
     return view('about', $dataAbout);
-});
+})->name('about');

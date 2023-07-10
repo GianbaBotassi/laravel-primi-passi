@@ -47,10 +47,10 @@
 <body>
   <nav>
     <ul>
-      <li><a href="\">Home</a></li>
-      <li><a href=".\about">About</a></li>
-      <li><a href=".\dove-siamo">Dove siamo</a></li>
-      <li><a href=".\contatti">Contatti</a></li>
+      <li><a href="{{ route('homepage') }}">Home</a></li>
+      <li><a href="{{ route('about') }}">About</a></li>
+      <li><a href="{{ route('dove-siamo') }}">Dove siamo</a></li>
+      <li><a href="{{ route('contatti') }}">Contatti</a></li>
     </ul>
   </nav>
 
